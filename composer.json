@@ -6,7 +6,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "PhpArsenal\\DoctrineMongoDBEnumTypeBundle\\": "src"
+      "PhpArsenal\\DoctrineODMEnumTypeBundle\\": "src"
     }
   },
   "config": {
