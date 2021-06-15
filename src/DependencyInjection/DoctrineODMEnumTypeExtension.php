@@ -24,6 +24,7 @@ class DoctrineODMEnumTypeExtension extends Extension implements PrependExtension
         $enumClasses = array_values(array_filter(get_declared_classes(), function (string $declaredClass) use ($projectNamespace) {
             return str_starts_with($declaredClass, "$projectNamespace\\") && strpos($declaredClass, 'Enum') > 0 && is_subclass_of($declaredClass, Enum::class);
         }));
+        $enumClasses = array_filter($enumClasses);
 
         $container->prependExtensionConfig('doctrine_mongodb', [
             'type' => array_map(function (string $enumClass) {
