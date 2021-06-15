@@ -44,6 +44,10 @@ class User
      * @ODM\Field(type=ActionEnum::class, name="action")
      */
     protected $action;
+    
+    public function __construct() {
+        $this->action = ActionEnum::CREATE();
+    }
 
     public function getAction(): ActionEnum
     {
