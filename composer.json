@@ -1,0 +1,15 @@
+{
+  "name": "php-arsenal/doctrine-odm-enum-type-bundle",
+  "type": "symfony-bundle",
+  "description": "Add custom enum mapping types for your documents.",
+  "homepage": "https://github.com/php-arsenal/doctrine-odm-enum-type-bundle",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "PhpArsenal\\DoctrineMongoDBEnumTypeBundle\\": "src"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
