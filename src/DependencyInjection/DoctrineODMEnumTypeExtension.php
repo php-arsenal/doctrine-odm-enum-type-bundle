@@ -26,13 +26,15 @@ class DoctrineODMEnumTypeExtension extends Extension implements PrependExtension
         }));
         $enumClasses = array_filter($enumClasses);
 
-        $container->prependExtensionConfig('doctrine_mongodb', [
-            'type' => array_map(function (string $enumClass) {
-                return [
-                    'name' => $enumClass,
-                    'class' => $enumClass,
-                ];
-            }, $enumClasses),
-        ]);
+        if(!empty($enumClasses)) {
+            $container->prependExtensionConfig('doctrine_mongodb', [
+                'type' => array_map(function (string $enumClass) {
+                    return [
+                        'name' => $enumClass,
+                        'class' => $enumClass,
+                    ];
+                }, $enumClasses),
+            ]);
+        }
     }
 }
