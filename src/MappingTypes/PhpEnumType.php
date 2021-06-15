@@ -24,7 +24,6 @@ class PhpEnumType extends Type
      */
     public function convertToPHPValue($value)
     {
-        var_dump($value);
         if ($value === null) {
             return null;
         }
