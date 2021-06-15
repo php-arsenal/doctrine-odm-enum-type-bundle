@@ -11,7 +11,7 @@ Add custom enum mapping types for your MongoDB documents in Symfony. Inspired by
 ```php
 <?php
 
-namespace Acelaya\Enum;
+namespace YourNamespace\Enum;
 
 use MyCLabs\Enum\Enum;
 
