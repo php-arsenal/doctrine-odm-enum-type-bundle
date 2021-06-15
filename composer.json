@@ -11,5 +11,12 @@
   },
   "config": {
     "sort-packages": true
+  },
+  "require": {
+    "php": ">=8.0",
+    "doctrine/mongodb-odm-bundle": "^4.3",
+    "myclabs/php-enum": "^1.8",
+    "symfony/dependency-injection": "^5.3",
+    "symfony/http-kernel": "^5.3"
   }
 }
