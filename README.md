@@ -4,6 +4,10 @@ Add custom enum mapping types for your MongoDB documents in Symfony. Inspired by
 
 `composer require php-arsenal/doctrine-odm-enum-type-bundle`
 
+[![Release](https://img.shields.io/github/v/release/php-arsenal/doctrine-odm-enum-type-bundle)](https://github.com/php-arsenal/doctrine-odm-enum-type-bundle/releases)
+[![CI](https://img.shields.io/github/workflow/status/php-arsenal/doctrine-odm-enum-type-bundle/CI)](https://github.com/php-arsenal/doctrine-odm-enum-type-bundle/actions/workflows/ci.yml)
+[![Packagist](https://img.shields.io/packagist/dt/php-arsenal/doctrine-odm-enum-type-bundle)](https://packagist.org/packages/php-arsenal/doctrine-odm-enum-type-bundle)
+
 # How it works?
 
 `Enum` classes that extend `MyCLabs\Enum\Enum` are automatically added as valid Doctrine types.
